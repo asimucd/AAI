@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<div class="container mt-5">
+  <h1>Register</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <div class="form-group">
+              <label for="number">Employee Id</label>
+              <input type="number" class="form-control" name="employeeId">
+            </div>
+            <div class="form-group">
+              <label >Designation</label>
+              <input type="text" class="form-control" name="designation">
+            </div>
+            <div class="form-group">
+              <label >Date of Retirement</label>
+              <input type="date" class="form-control" name="dateOfRetirement" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="form-group">
+              <label >Role</label>
+              <input type="text" class="form-control" name="role" >
+            </div>
+
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  
+
+  </div>
+</div>
+
+<%- include('partials/header') %>
